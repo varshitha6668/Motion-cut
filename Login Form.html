@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       :root {
-        --primary-color: #fead53;
-        --text-dark: #333333;
-        --text-light: #ffffff33;
-        --extra-light: #f3f4f6;
+        --primary-color: #4a90e2; /* Blue shade */
+        --text-dark: #1a1a1a; /* Dark gray */
+        --text-light: #f0f0f0; /* Light gray */
+        --extra-light: #e0e0e0; /* Very light gray */
+        --background-color: #dbe9f4; /* New background color */
         --max-width: 1300px;
       }
 
@@ -24,17 +25,18 @@
       }
 
       input::placeholder {
-        color: var(--text-dark); 
+        color: var(--text-dark);
       }
 
       body {
         font-family: "Open Sans", sans-serif;
         min-height: 100vh;
+        background-color: var(--background-color); /* Changed background color */
         background-image: linear-gradient(
-            rgba(0, 0, 0, 0.25),
-            rgba(0, 0, 0, 0.25)
+            rgba(255, 255, 255, 0.6), /* Changed gradient color */
+            rgba(255, 255, 255, 0.6)
           ),
-          url("download.jpg");
+          url("https://png.pngtree.com/thumb_back/fh260/background/20220917/pngtree-background-idea-for-studiogradient-purple-room-background-with-deep-shade-for-product-display-photo-image_38383462.jpg");
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -63,7 +65,7 @@
         display: grid;
         border-radius: 5px;
         background-color: var(--text-light);
-        color: var(--extra-light);
+        color: var(--text-dark);
         padding: 2rem;
       }
 
@@ -71,7 +73,7 @@
         font-size: 1.2rem;
         font-weight: 600;
         margin-bottom: 1rem;
-        color: #000000;
+        color: var(--text-dark);
         text-align: center;
       }
 
@@ -92,14 +94,14 @@
       }
 
       .form__group label {
-        display: none; 
+        display: none;
       }
 
       .form__group input {
         padding: 0.5rem;
         font-size: 1rem;
         color: var(--text-dark);
-        background-color: #FFE5EC;
+        background-color: #e3f2fd; /* Light blue */
         outline: none;
         border: 1px solid var(--extra-light);
         border-radius: 5px;
@@ -124,8 +126,8 @@
         outline: none;
         border: none;
         border-radius: 5px;
-        background-color: #FFB3C6;
-        color: var(--extra-light);
+        background-color: var(--primary-color); /* Blue shade */
+        color: var(--text-light);
         cursor: pointer;
       }
 
@@ -168,7 +170,7 @@
         display: inline-block;
         height: 4px;
         width: 100px;
-        background-color: var(--text-light);
+        background-color: var(--text-dark);
       }
 
       .bottom__tracker span:nth-child(2) {
@@ -182,7 +184,8 @@
         <form>
           <div class="logo">
             <a href="#signup-button">
-                         </a>
+              <!-- Logo Image Here -->
+            </a>
           </div>
           <h4>Sign In</h4>
           <div class="form__group">
@@ -196,7 +199,7 @@
           </div>
           <div class="button-group">
             <button type="button">
-             Forget Password
+              Forget Password
             </button>
             <button type="button" id="signup-button">
               Signup
